@@ -5,8 +5,8 @@
   |============================
 */
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+@import url('./1-gallery.css');
+@import url('./2-form.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -22,4 +22,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.main-page-list{
+  display: flex;
+  gap: 24px;
+}
+
+.main-page-link{
+  padding: 8px;
+  border-radius: 4px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(204, 204, 204);
+  transform: color 250ms easy-in-out, background-color 250ms easy-in-out;
+}
+
+.main-page-link:hover{
+  color:rgba(255, 255, 255);
+  background-color: rgb(51, 51, 51);
 }

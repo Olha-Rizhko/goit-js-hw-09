@@ -1,0 +1,33 @@
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1128px;
+  width: 70vw;
+  max-height: 648px;
+  padding: 24px;
+  margin-inline: auto;
+  user-select: none;
+}
+
+.gallery-item {
+  width: calc((100% - 48px) / 3);
+  max-width: 360px;
+  object-fit: cover;
+  transition: transform 250ms easy-in-out;
+}
+
+.gallery-item:hover{
+  transform: scale(1.04);
+}
+
+.gallery-caption {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 8px;
+  border-radius: 4px;
+}
